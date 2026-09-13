@@ -5,22 +5,38 @@
 (4) Scope
 '''
 
-print("======= DEFINE (parametr) vs CALL (argument)======")
-# build in fuction > print() type()
-# Function - reusable block of code ! Malum bir mantiqni bajarib beruvchi blok kod
-# instead of block {} in JAVA, PYTHON uses indentation!
+print("======= DEFINE (parametr) vs CALL (argument) =======")
 
-#DEFINE - parametr
+
+# DEFINE - parametr
 def greet(a):
-    print(f"How do you do , {a}")
+    print(f"How do you do, {a}")
 
-    def greeting(b):
-        print("greeting is executed")
-        return f"hi {b}"
 
-    # CALL - argument
-    result1 = greet("Rio")
-    print("result1", result1)
+# CALL - argument
+result1 = greet("Rio")
+print("result1:", result1)
 
-    result2 = greeting("Justin")
-    print("result2:", result2)
+
+def greeting(b):
+    print("greeting is executed")
+    return f"hi {b}"
+
+
+result2 = greeting("Justin")
+print("result2:", result2)
+
+
+print("======= Keyword & default arguments ======")
+
+
+def give_greet(name, age=22):
+    print("give_greet is executed")
+    return f"Hi {name}, you are {age} years old"
+
+
+result3 = give_greet("Justin", 20)
+print("result3:", result3)
+
+result3 = give_greet("Martin")
+print("result3:", result3)
