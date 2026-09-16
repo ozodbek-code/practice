@@ -27,5 +27,5 @@ print(f"name: {name}, hobby: {hobby} and balance: {balance}")
 
 del person_obj["single"]
 for key in person_obj:
-    print(f"the key: {key} => value {person_obj[key]}")
+    print(f"the key: {key} => value {person_obj[key]}") # get ni ham ishlatsak boladi
        
